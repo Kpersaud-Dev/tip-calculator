@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just The Tip Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <span class="title">Just The Tip Calculator</span>
+    <form>
+      <label for="">How much was your bill?</label>
+      <input type="integer" placeholder="Bill Amount">
+    </form>
+    <form>
+      <label for="service">How was your service?</label>
+      <select name="service-rating" id="service-rating">
+        <option value="" disabled selected>Select your option</option>
+        <option value="poor">Poor</option>
+        <option value="good">Good</option>
+        <option value="great">Great</option>
+        <option value="excellent">Excellent</option>
+      </select>
+    </form>
+    <form>
+      <label for="people">How many people are sharing your bill?</label>
+      <input type="integer" placeholder="Number of People">
+    </form>
+  </div>
+  <button class="calculate">Calculate</button>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
