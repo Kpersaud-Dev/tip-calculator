@@ -4,32 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Just The Tip Calculator</title>
 </head>
 
 <body>
   <div class="container">
-    <span class="title">Just The Tip Calculator</span>
-    <form>
+    <h1 class="title">Just The Tip Calculator</h1>
+    <form class="form">
       <label for="">How much was your bill?</label>
-      <input type="integer" placeholder="Bill Amount">
+      <input type="integer" placeholder="Bill Amount" id="bill-amount">
     </form>
-    <form>
+    <form class="form">
       <label for="service">How was your service?</label>
       <select name="service-rating" id="service-rating">
         <option value="" disabled selected>Select your option</option>
-        <option value="poor">Poor</option>
-        <option value="good">Good</option>
-        <option value="great">Great</option>
-        <option value="excellent">Excellent</option>
+        <option value="0.05">Terrible - 5%</option>
+        <option value="0.10">Bad - 10%</option>
+        <option value="0.15">Good - 15%</option>
+        <option value="0.20">Great - 20%</option>
+        <option value="0.30">Excellent - 30%</option>
       </select>
     </form>
-    <form>
+    <form class="form">
       <label for="people">How many people are sharing your bill?</label>
-      <input type="integer" placeholder="Number of People">
+      <input type="integer" placeholder="Number of People" id="number-of-people">
     </form>
+    <button id="calculate">Calculate</button>
+    <!-- Calculator End -->
+    <div id="total-tip">
+      $<span id="tip"></span>
+    </div>
+    <!-- Total Tip End -->
+
   </div>
-  <button class="calculate">Calculate</button>
+  <!-- Container End -->
 
 
   <script src="app.js"></script>
